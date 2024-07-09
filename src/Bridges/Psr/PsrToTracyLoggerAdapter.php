@@ -24,7 +24,7 @@ class PsrToTracyLoggerAdapter implements Tracy\ILogger
 		Tracy\ILogger::INFO => Psr\Log\LogLevel::INFO,
 		Tracy\ILogger::WARNING => Psr\Log\LogLevel::WARNING,
 		Tracy\ILogger::ERROR => Psr\Log\LogLevel::ERROR,
-		Tracy\ILogger::EXCEPTION => Psr\Log\LogLevel::ERROR,
+		Tracy\ILogger::EXCEPTION => Psr\Log\LogLevel::CRITICAL,
 		Tracy\ILogger::CRITICAL => Psr\Log\LogLevel::CRITICAL,
 	];
 
